@@ -4,6 +4,8 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+declare var window: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
@@ -21,6 +23,26 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.initEMMA();
     });
+  }
+
+  initEMMA() {
+
+    const EMMA = window.plugins.EMMA;
+
+    const configuration = {
+        sessionKey: 'emmaionicoJxuVt2o3',
+        debug: true
+    };
+
+   EMMA.startSession(configuration);
+
+    const pushOptions = {
+      classToOpen: 'io.emma.cordova.exampleionic.MainActivity',
+      iconResource: 'notification'
+    };
+
+    EMMA.startPush(pushOptions);
   }
 }

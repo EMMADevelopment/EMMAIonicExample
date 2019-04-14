@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "631160038197",
+    "firebase_url": "https://mercurial-lamp-115916.firebaseio.com",
+    "project_id": "mercurial-lamp-115916",
+    "storage_bucket": "mercurial-lamp-115916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631160038197:android:e529eca40e54764f",
+        "android_client_info": {
+          "package_name": "io.emma.cordova.exampleionic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3nVJQjtNkzvZT00yZvy7gtPNyE8OVKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631160038197-6riomkoju7rp4sispa5r7frblv56jnhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631160038197:android:3811f6c9ec99fbf9",
+        "android_client_info": {
+          "package_name": "io.emma.cordovaplugin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ3nVJQjtNkzvZT00yZvy7gtPNyE8OVKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631160038197-6riomkoju7rp4sispa5r7frblv56jnhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
