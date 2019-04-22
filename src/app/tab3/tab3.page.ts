@@ -10,7 +10,6 @@ declare var window: any;
 export class Tab3Page {
 
   ionViewDidEnter() {
-    console.log('DID ENTER');
     const EMMA = window.plugins.EMMA;
 
     const message = {

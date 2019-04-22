@@ -65,6 +65,7 @@
                     <data android:host="emmaionic.powlink.emma.io" android:scheme="https" />
                 </intent-filter>
             </activity>
+            <meta-data android:name="io.emma.DEEPLINK_OPEN_ACTIVITY" android:value="io.emma.cordova.exampleionic.MainActivity" />
         </config-file>
     </platform>
     <platform name="ios">
