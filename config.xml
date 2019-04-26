@@ -45,6 +45,10 @@
         <resource-file src="resources/android/notification/drawable-xxhdpi-notification.png" target="app/src/main/res/drawable-xxhdpi/notification.png" />
         <resource-file src="resources/android/notification/drawable-xxxhdpi-notification.png" target="app/src/main/res/drawable-xxxhdpi/notification.png" />
         <resource-file src="google-services.json" target="app/google-services.json" />
+        <config-file parent="/manifest" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        </config-file>
         <config-file parent="/manifest/application" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
             <service android:enabled="true" android:exported="false" android:name="io.emma.android.push.EMMAFcmMessagingService">
                 <intent-filter>

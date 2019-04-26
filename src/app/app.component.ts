@@ -44,6 +44,8 @@ export class AppComponent {
 
     EMMA.startSession(configuration);
 
+    EMMA.trackLocation();
+
     const pushOptions = {
       classToOpen: 'io.emma.cordova.exampleionic.MainActivity',
       iconResource: 'notification'
