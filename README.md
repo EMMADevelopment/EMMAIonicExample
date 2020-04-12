@@ -1,4 +1,4 @@
-# Cordova plugin example for Ionic 3
+# Cordova plugin example for Ionic
 
 This is un example project for integration of Cordova plugin for EMMA SDK
 
