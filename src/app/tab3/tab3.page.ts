@@ -12,11 +12,11 @@ export class Tab3Page {
   ionViewDidEnter() {
     const EMMA = window.plugins.EMMA;
 
-    const message = {
-      type: 'nativeAd',
+    const tags = {
+      tag1: 'tag1 value',
     };
 
-    EMMA.trackUserExtraInfo(message);
+    EMMA.trackUserExtraInfo(tags);
 
 
     const eventRequest = {
@@ -26,8 +26,8 @@ export class Tab3Page {
     EMMA.trackEvent(eventRequest);
 
     const loginRegister = {
-      userId: 'adri',
-      email: 'adrian@emma.io'
+      userId: 'user23564',
+      email: 'usermail@email.com'
     };
 
     EMMA.registerUser(loginRegister);
