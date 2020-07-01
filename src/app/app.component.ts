@@ -29,10 +29,14 @@ export class AppComponent {
   }
 
   initEMMA() {
-
     document.addEventListener('onDeepLink', (event) => {
       const msg = JSON.stringify(event);
-      this.presentDeepLinkAlert(msg);
+      this.presentAlert('DeepLink', msg);
+    });
+
+    document.addEventListener('onDeviceId', (event) => {
+      const msg = JSON.stringify(event);
+      this.presentAlert('DeviceId', msg);
     });
 
     const EMMA = window.plugins.EMMA;
@@ -54,13 +58,15 @@ export class AppComponent {
     EMMA.startPush(pushOptions);
   }
 
-  presentDeepLinkAlert(msg) {
-    this.alertCtrl.create({
-      header: 'DeepLink',
-      message: msg,
-      buttons: ['OK']
-    }).then((alert) => {
-      alert.present();
-    });
+  presentAlert(title, msg) {
+    this.alertCtrl
+      .create({
+        header: title,
+        message: msg,
+        buttons: ['OK']
+      })
+      .then((alert) => {
+        alert.present();
+      });
   }
 }
