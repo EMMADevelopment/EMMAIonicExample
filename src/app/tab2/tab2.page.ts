@@ -19,6 +19,9 @@ export class Tab2Page {
     };
 
     EMMA.inAppMessage(message);
+
+    const deviceId = EMMA.getSyncDeviceId();
+    console.log('Obtained deviceIdSync ' + deviceId);
   }
 
   onReceivedNativeAd(nativeAds) {
