@@ -12,7 +12,7 @@ export class Tab2Page {
     const EMMA = window.plugins.EMMA;
 
     const message = {
-      type: 'nativeAd',
+      type: EMMA.inAppTypes.NATIVEAD,
       templateId: 'template-custom',
       batch: true,
       inAppResponse: this.onReceivedNativeAd

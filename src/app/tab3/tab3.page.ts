@@ -8,16 +8,14 @@ declare var window: any;
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-
   ionViewDidEnter() {
     const EMMA = window.plugins.EMMA;
 
     const tags = {
-      tag1: 'tag1 value',
+      tag1: 'tag1 value'
     };
 
     EMMA.trackUserExtraInfo(tags);
-
 
     const eventRequest = {
       token: 'token'
@@ -32,7 +30,6 @@ export class Tab3Page {
 
     EMMA.registerUser(loginRegister);
     EMMA.loginUser(loginRegister);
-
 
     const order = {
       orderId: 'L-X98421',
@@ -53,5 +50,4 @@ export class Tab3Page {
 
     EMMA.trackOrder();
   }
-
 }
