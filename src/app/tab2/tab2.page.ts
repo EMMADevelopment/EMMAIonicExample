@@ -8,23 +8,37 @@ declare var window: any;
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-  ionViewDidEnter() {
-    const EMMA = window.plugins.EMMA;
+  emma = window.plugins.EMMA;
 
+  ionViewDidEnter() {
     const message = {
-      type: EMMA.inAppTypes.NATIVEAD,
-      templateId: 'template-custom',
+      type: this.emma.inAppTypes.NATIVEAD,
+      templateId: 'default',
       batch: true,
-      inAppResponse: this.onReceivedNativeAd
+      inAppResponse: (nativeAds) => {
+        console.log(JSON.stringify(nativeAds));
+        if (nativeAds.length) {
+          const nativeAd = nativeAds[0];
+          this.openNativeAd(nativeAd);
+        }
+      }
     };
 
-    EMMA.inAppMessage(message);
+    this.emma.inAppMessage(message);
 
-    const deviceId = EMMA.getSyncDeviceId();
+    const deviceId = this.emma.getSyncDeviceId();
     console.log('Obtained deviceIdSync ' + deviceId);
   }
 
-  onReceivedNativeAd(nativeAds) {
-    console.log(JSON.stringify(nativeAds));
+  sendInAppImpression(inAppType, campaignId) {
+    this.emma.sendInAppImpression(inAppType, campaignId);
+  }
+
+  sendInAppClick(inAppType, campaignId) {
+    this.emma.sendInAppClick(inAppType, campaignId);
+  }
+
+  openNativeAd(nativeAd) {
+    this.emma.openNativeAd(nativeAd.id, nativeAd.cta, nativeAd.showOn);
   }
 }
