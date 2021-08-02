@@ -29,9 +29,10 @@ export class AppComponent {
   }
 
   initEMMA() {
-    document.addEventListener('onDeepLink', (event) => {
-      const msg = JSON.stringify(event);
-      this.presentAlert('DeepLink', msg);
+    document.addEventListener('onDeepLink', (event: any) => {
+      const url = event.url;
+      EMMA.handleLink(url);
+      this.presentAlert('DeepLink', JSON.stringify(event));
     });
 
     document.addEventListener('onDeviceId', (event) => {
