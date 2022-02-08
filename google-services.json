@@ -13,31 +13,12 @@
           "package_name": "io.emma.cordova.exampleionic"
         }
       },
-      "oauth_client": [],
-      "api_key": [
+      "oauth_client": [
         {
-          "current_key": "AIzaSyDZ3nVJQjtNkzvZT00yZvy7gtPNyE8OVKg"
+          "client_id": "631160038197-6riomkoju7rp4sispa5r7frblv56jnhs.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "631160038197-6riomkoju7rp4sispa5r7frblv56jnhs.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:631160038197:android:3811f6c9ec99fbf9",
-        "android_client_info": {
-          "package_name": "io.emma.cordovaplugin"
-        }
-      },
-      "oauth_client": [],
       "api_key": [
         {
           "current_key": "AIzaSyDZ3nVJQjtNkzvZT00yZvy7gtPNyE8OVKg"
