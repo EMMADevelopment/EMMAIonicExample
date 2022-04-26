@@ -114,5 +114,4 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^5.0.0" />
     <plugin name="cordova-plugin-androidx" spec="^3.0.0" />
     <engine name="ios" spec="^6.1.1" />
-    <engine name="android" spec="^10.0.0" />
 </widget>
