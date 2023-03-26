@@ -1,0 +1,7 @@
+{
+  "name": "EMMAIonicExample",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
