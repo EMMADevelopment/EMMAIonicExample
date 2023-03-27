@@ -1,0 +1,28 @@
+buildscript {
+    dependencies { 
+        classpath 'com.google.gms:google-services:4.3.10' 
+    }
+    repositories {
+        mavenCentral()
+        maven { url 'https://repo.emma.io/emma' }
+        google()
+        maven { url 'https://repo.emma.io/emma' }
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://repo.emma.io/emma' }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+    implementation 'io.emma:eMMaSDK:4.12.+'
+}
+
+ext.postBuildExtras = {
+  if (project.extensions.findByName('googleServices') == null) {
+      apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
+  }
+}

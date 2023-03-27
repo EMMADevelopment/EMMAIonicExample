@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-emma-sdk" version="1.5.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>EMMA</name>
+    <description>Cordova Plugin for EMMA</description>
+    <license>MIT</license>
+    <keywords>cordova,mobile marketing,emma</keywords>
+    <repo>https://github.com/EMMADevelopment/Cordova-Plugin-EMMA-SDK.git</repo>
+
+    <engines>
+        <engine name="cordova" version=">=7.0.0" />
+        <engine name="cordova-android" version=">=6.3.0" />
+        <engine name="cordova-ios" version=">=4.3.0" />
+    </engines>
+
+    <js-module name="emma" src="www/emma.js">
+        <clobbers target="window.plugins.EMMA"/>
+    </js-module>
+
+    <hook type="after_plugin_add" src="scripts/androidPushDependencies.js" />
+    <hook type="after_plugin_add" src="scripts/iOSPushMethods.js" />
+
+    <platform name="android">
+        <config-file parent="/*" target="config.xml">
+            <feature name="EMMAPlugin">
+                <param name="android-package" value="io.emma.cordova.plugin.EMMAPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <uses-permission android:name="android.permission.VIBRATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity
+                android:exported="false"
+                android:name="io.emma.android.activities.EMMAWebViewActivity"
+                android:hardwareAccelerated="true"
+                android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+            <activity
+                android:exported="false"
+                android:launchMode="singleTask"
+                android:name="io.emma.android.activities.EMMAInternalPushActivity"
+                android:theme="@android:style/Theme.NoDisplay"/>
+            <activity
+                android:exported="false"
+                android:launchMode="singleTask"
+                android:name="io.emma.android.activities.PermissionsActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        </config-file>
+        
+        <source-file src="src/android/io/emma/cordova/plugin/EMMAPluginConstants.java" target-dir="src/io/emma/cordova/plugin" />
+        <source-file src="src/android/io/emma/cordova/plugin/EMMAPlugin.java" target-dir="src/io/emma/cordova/plugin"/>
+
+        <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+
+    </platform>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="EMMAPlugin">
+                <param name="ios-package" value="EMMAPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/EMMAPlugin.h"/>
+        <source-file src="src/ios/EMMAPlugin.m"/>
+        <source-file src="src/ios/AppDelegate+EMMAPlugin.h"/>
+        <source-file src="src/ios/AppDelegate+EMMAPlugin.m"/>
+
+        <framework src="AdSupport.framework" weak="true" />
+        <framework src="AdServices.framework" weak="true" />
+        <framework src="src/ios/EMMA_iOS.xcframework" custom="true" embed="true"/>
+    </platform>
+    
+</plugin>

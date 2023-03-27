@@ -1,0 +1,18 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.emma.cordova.exampleionic"
+    },
+    "cordova-plugin-emma-sdk": {
+      "PACKAGE_NAME": "io.emma.cordova.exampleionic"
+    }
+  },
+  "dependent_plugins": {}
+}
