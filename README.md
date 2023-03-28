@@ -12,5 +12,9 @@ $ ionic cordova run android
 
 ```
 $ ionic cordova build ios
+// Development mode
+ionic cordova emulate --release --prod --livereload ios -- --buildFlag="-UseModernBuildSystem=0"
+// Production mode
 $ ionic cordova run ios
+Also, you can open the .xcworkspace and run it on Xcode
 ```
