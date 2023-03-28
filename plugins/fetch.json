@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-ionic-webview": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-ionic-webview@latest"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-emma-sdk": {
     "source": {
       "type": "registry",
@@ -16,5 +8,13 @@
     "variables": {
       "ADD_PUSH": "1"
     }
+  },
+  "cordova-plugin-ionic-webview": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ionic-webview@^5.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

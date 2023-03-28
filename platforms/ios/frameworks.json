@@ -1,5 +1,5 @@
 {
-    "WebKit.framework": 1,
     "AdSupport.framework": 1,
-    "AdServices.framework": 1
+    "AdServices.framework": 1,
+    "WebKit.framework": 1
 }

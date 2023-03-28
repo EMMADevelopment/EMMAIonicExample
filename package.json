@@ -64,14 +64,14 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-ionic-webview": {},
       "cordova-plugin-emma-sdk": {
         "ADD_PUSH": "1"
-      }
+      },
+      "cordova-plugin-ionic-webview": {}
     },
     "platforms": [
-      "ios",
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

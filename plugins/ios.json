@@ -7,11 +7,11 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-ionic-webview": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
     "cordova-plugin-emma-sdk": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "io.emma.cordova.exampleionic"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.emma.cordova.exampleionic"
     }
   },
   "dependent_plugins": {}
