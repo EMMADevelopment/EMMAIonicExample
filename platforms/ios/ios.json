@@ -70,6 +70,6 @@
   ],
   "plugin_metadata": {
     "cordova-plugin-ionic-webview": "5.0.0",
-    "cordova-plugin-emma-sdk": "1.5.0"
+    "cordova-plugin-emma-sdk": "1.6.0"
   }
 }

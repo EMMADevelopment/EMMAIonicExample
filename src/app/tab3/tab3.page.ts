@@ -23,6 +23,12 @@ export class Tab3Page {
 
     EMMA.trackEvent(eventRequest);
 
+    EMMA.updatePostbackConversionValueSkad4({
+      conversionValue: 4,
+      coarseValue: 'high',
+      lockWindow: false
+    });
+
     const loginRegister = {
       userId: 'user23564',
       email: 'usermail@email.com'
