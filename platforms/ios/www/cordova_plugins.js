@@ -27,6 +27,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
   ];
   module.exports.metadata = {
     "cordova-plugin-ionic-webview": "5.0.0",
-    "cordova-plugin-emma-sdk": "1.6.0"
+    "cordova-plugin-emma-sdk": "1.6.1"
   };
 });
