@@ -1,3 +1,127 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>WELCOME TO EMMA</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+
+<ion-content>
+  <div class="square-green">
+    <img class="logo" src="../../assets/logo.png" alt="EMMA Logo">
+  </div>
+
+  <ion-grid class="ion-padding">
+
+
+    <ion-row class="ion-align-items-end">
+    <h2>Deeplink</h2>
+    <ion-col class="status">No deeplink</ion-col>
+    </ion-row>
+
+    <ion-row>
+    <p>Received deeplink will be displayed here.</p>
+    </ion-row>
+
+    <h2>Session</h2>
+    <p>Session is required. Usually, it should be triggered when the App is ready.</p>
+    <ion-button expand="full">SESSION</ion-button>
+
+    <h2>Register User</h2>
+    <ion-button expand="full">REGISTER</ion-button>
+
+    <h2>Log in User</h2>
+    <ion-button expand="full">LOG IN USER</ion-button>
+
+    <h2>Events and Extras</h2>
+    <p>These buttons do not have UI feedback.</p>
+    <ion-row>
+      <ion-col><ion-button expand="full">TRACK EVENT</ion-button></ion-col>
+      <ion-col><ion-button expand="full">ADD USER TAG 'TAG'</ion-button></ion-col>
+    </ion-row>
+
+
+    <h2>Orders and Products</h2>
+    <p>Track your orders.</p>
+    <ion-row>
+      <ion-col><ion-button expand="full">START ORDER</ion-button></ion-col>
+      <ion-col><ion-button expand="full">ADD PRODUCT</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button expand="full">TRACK ORDER</ion-button></ion-col>
+      <ion-col><ion-button expand="full">CANCEL ORDER</ion-button></ion-col>
+    </ion-row>
+
+    <h2>In-App Comunication</h2>
+    <p>Try our in-app comunications:</p>
+    <ion-row>
+      <ion-col><ion-button expand="full">SHOW ADBALL</ion-button></ion-col>
+      <ion-col><ion-button expand="full">SHOW STARTVIEW</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button expand="full">SHOW STRIP</ion-button></ion-col>
+      <ion-col><ion-button expand="full">SHOW NATIVE AD</ion-button></ion-col>
+    </ion-row>
+
+
+
+    <h2>IDFA and iOS</h2>
+    <p>Request tracking with IDFA for iOS devices.</p>
+    <ion-button  expand="full" >REQUEST IDFA TRACKING</ion-button>
+
+
+    <h2>Learn More</h2>
+    <p>Read the docs to discover what to do next:</p>
+    <ion-list>
+      <ion-item detail="false" class="technology" href="https://developer.emma.io/es/home">
+        <ion-label color="primary">EMMA SDK</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>Documentation & Support</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/eMMa-iOS-SDK">
+        <ion-label color="primary">iOS</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>EMMA SDK for iOS</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/EMMA-Android-SDK">
+        <ion-label color="primary">Android</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>EMMA SDK for Android</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/Cordova-Plugin-EMMA-SDK">
+        <ion-label color="primary">Cordova</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>EMMA SDK for Cordova</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/EMMAIonicExample">
+        <ion-label color="primary">Ionic</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>EMMA SDK for Ionic</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/emma_flutter_sdk">
+        <ion-label color="primary">Flutter</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label>EMMA SDK for Flutter</ion-label>
+      </div>
+      </ion-item>
+
+      <ion-item detail="false" class="technology" href="https://github.com/EMMADevelopment/EMMA-Xamarin-SDK">
+        <ion-label color="primary">Xamarin</ion-label>
+        <div class="ion-text-wrap">
+        <ion-label class="ion-text-left">EMMA SDK for Xamarin</ion-label>
+      </div>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-content>
+ 

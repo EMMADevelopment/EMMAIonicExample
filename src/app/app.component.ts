@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Platform, AlertController } from '@ionic/angular';
+import { log } from 'console';
 
 //import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 //import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -20,6 +21,7 @@ export class AppComponent {
     this.initializeApp();
   }
 
+ 
   initializeApp() {
     this.platform.ready().then(() => {
       this.initEMMA();
@@ -71,5 +73,6 @@ export class AppComponent {
       .then((alert) => {
         alert.present();
       });
-  }
+  } 
+  
 }
