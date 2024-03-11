@@ -74,9 +74,9 @@ export class AppComponent {
         alert.present();
       });
   } 
+
   requestIDFA(){
     window.plugins.EMMA.requestTrackingWithIdfa();
   }
-    
   
 }
