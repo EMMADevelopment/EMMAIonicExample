@@ -74,5 +74,10 @@ export class AppComponent {
         alert.present();
       });
   } 
+  requestIDFA(){
+    console.log("Holaa");
+    window.plugins.EMMA.requestTrackingWithIdfa();
+  }
+    
   
 }
