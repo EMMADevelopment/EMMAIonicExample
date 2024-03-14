@@ -29,11 +29,11 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-              "count": 22
+              "count": 28
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
-              "count": 22
+              "count": 28
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -55,7 +55,7 @@
           "/manifest/application": [
             {
               "xml": "<service android:enabled=\"true\" android:exported=\"false\" android:name=\"io.emma.android.push.EMMAFcmMessagingService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
-              "count": 22
+              "count": 28
             },
             {
               "xml": "<activity android:exported=\"false\" android:hardwareAccelerated=\"true\" android:name=\"io.emma.android.activities.EMMAWebViewActivity\" android:theme=\"@android:style/Theme.Holo.Light.NoActionBar\" />",
@@ -73,11 +73,11 @@
           "./application/activity": [
             {
               "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"emmaionic\" /></intent-filter>",
-              "count": 22
+              "count": 28
             },
             {
               "xml": "<intent-filter android:autoVerify=\"true\"><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"emmaionic.powlink.io\" android:scheme=\"https\" /></intent-filter>",
-              "count": 22
+              "count": 28
             }
           ]
         }

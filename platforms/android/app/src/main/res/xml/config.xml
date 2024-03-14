@@ -22,7 +22,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost:8100" sessionid="d24d500f" />
-    <allow-navigation href="http://192.168.1.30:8100" sessionid="6333fe1d" />
+    <allow-navigation href="http://192.168.1.30:8100" sessionid="9c6e84c3" />
     <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application" xmlns:android="http://schemas.android.com/apk/res/android">
         <application android:networkSecurityConfig="@xml/network_security_config" />
     </edit-config>
