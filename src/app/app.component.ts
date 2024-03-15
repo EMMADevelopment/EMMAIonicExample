@@ -4,10 +4,10 @@ import { Platform, AlertController } from '@ionic/angular';
 import { log } from 'console';
 import { AnyARecord } from 'dns';
 import { IN_APP_TYPE,
-  loginRegisterUserParams, 
-  eventParams, 
-  orderParams, 
-  productParams
+  LoginRegisterUserParams, 
+  EventParams, 
+  OrderParams, 
+  ProductParams
          } from './types';
 
 //import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -23,28 +23,28 @@ export class AppComponent {
   EMMA: any; 
   
   //Button Controllers
-  setRegistered : boolean = false;
-  setLogged : boolean = false;
-  setOrdered : boolean = false;
-  setAdded : boolean = true;
-  setTracked : boolean = true;
-  setCanceled : boolean = true;
-  banner : boolean = false;
+  isRegistered  = false;
+  isLogged = false;
+  isOrdered = false;
+  isAdded = true;
+  isTracked = true;
+  isCanceled = true;
+  banner = false;
 
   //OS
-  isAndroid: boolean = false;
-  isIos: boolean = false;
+  isAndroid= false;
+  isIos= false;
 
   //Parameters
-  userParams : loginRegisterUserParams ={
+  userParams : LoginRegisterUserParams ={
     userId:"Prueba",
     email:"email.prueba@arkana.io"
   };
-  eventToken : eventParams ={
+  eventToken : EventParams ={
     eventRequest: "7b358954cf16bc2b7830bb5307f80f96",
     eventAttributes: {IONIC: "working"}
   }
-  order : orderParams ={
+  order : OrderParams ={
     orderId:"EMMA",
     totalPrice: 24.12,
     customerId:"EMMA",
@@ -52,7 +52,7 @@ export class AppComponent {
     coupon: "",
     extras: {IONIC: "Working"}
   };
-  product : productParams ={
+  product : ProductParams ={
     productId:"SDK",
       productName:"SDK",
       quantity:2,
@@ -126,12 +126,12 @@ export class AppComponent {
   handleRegisterUser(){
     console.log("Register user");
     this.EMMA.registerUser(this.userParams);
-    this.setRegistered = true;
+    this.isRegistered = true;
   }
   handleLoginUser(){
     console.log("Login user");
     this.EMMA.loginUser(this.userParams);
-    this.setLogged = true;
+    this.isLogged = true;
   }
   trackEvent(){
     console.log("Track event");
@@ -176,27 +176,27 @@ export class AppComponent {
   startOrder(){
     console.log("Start Order");
     this.EMMA.startOrder(this.order);
-    this.setOrdered = true;
-    this.setAdded = false;
-    this.setTracked = false;
+    this.isOrdered = true;
+    this.isAdded = false;
+    this.isTracked = false;
   }
   addProduct(){
     console.log("Add Product");
     this.EMMA.addProduct(this.product);
-    this.setAdded = true;
-    this.setTracked = false;
+    this.isAdded = true;
+    this.isTracked = false;
   }
   trackOrder(){
     console.log("TrackOrder");
     this.EMMA.trackOrder();
-    this.setTracked = true;
-    this.setCanceled = false;
+    this.isTracked = true;
+    this.isCanceled = false;
   }
   cancelOrder(){
     console.log("Cancel Order");
     this.EMMA.cancelOrder(this.order.orderId);
-    this.setCanceled = true;
-    this.setOrdered = false; 
+    this.isCanceled = true;
+    this.isOrdered = false; 
   }
 
   requestIDFA(){

@@ -7,22 +7,22 @@ export enum IN_APP_TYPE {
 
 }
 
-export interface startSessionParams{
+export interface StartSessionParams{
     sessionKey : string;
     isDebug : boolean;
 }
 
-export interface loginRegisterUserParams {
+export interface LoginRegisterUserParams {
     userId: string;
     email?: string;
 }
 
-export interface eventParams {
+export interface EventParams {
     eventRequest: string;
     eventAttributes?: Record<string, string | number>;
 }
 
-export interface orderParams {
+export interface OrderParams {
     orderId: string;
     totalPrice: number;
     customerId: string;
@@ -31,7 +31,7 @@ export interface orderParams {
     extras?: Record<string, string>; 
 }
 
-export interface productParams {
+export interface ProductParams {
     productId: string;
     productName: string;
     quantity: number;
