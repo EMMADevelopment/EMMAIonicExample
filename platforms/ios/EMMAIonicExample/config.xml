@@ -36,7 +36,7 @@
     <name>EMMAIonicExample</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.1.30:8100" />
+    <content original-src="index.html" src="http://192.168.1.35:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -46,6 +46,7 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost:8100" sessionid="d24d500f" />
     <allow-navigation href="http://192.168.1.30:8100" sessionid="9c6e84c3" />
+    <allow-navigation href="http://192.168.1.35:8100" sessionid="791b20a3" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <icon height="57" src="resources/ios/icon/icon.png" width="57" />

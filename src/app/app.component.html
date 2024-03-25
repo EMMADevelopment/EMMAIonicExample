@@ -32,15 +32,15 @@
 
     <ion-row class="ion-align-items-end">
     <h2>Register User</h2>
-    <ion-col *ngIf="setRegistered"class="status">User Registered</ion-col>
+    <ion-col *ngIf="isRegistered"class="status">User Registered</ion-col>
     </ion-row>
-    <ion-button (click)="handleRegisterUser()" [disabled] ="setRegistered" expand="full">REGISTER USER</ion-button>
+    <ion-button (click)="handleRegisterUser()" [disabled] ="isRegistered" expand="full">REGISTER USER</ion-button>
     
     <ion-row class="ion-align-items-end">
     <h2>Log in User</h2>
-    <ion-col *ngIf="setLogged"class="status">User logged in</ion-col>
+    <ion-col *ngIf="isLogged"class="status">User logged in</ion-col>
     </ion-row>
-    <ion-button (click)="handleLoginUser()" [disabled] ="setLogged" expand="full">LOG IN USER</ion-button>
+    <ion-button (click)="handleLoginUser()" [disabled] ="isLogged" expand="full">LOG IN USER</ion-button>
 
     <h2>Events and Extras</h2>
     <p>These buttons do not have UI feedback.</p>
@@ -67,12 +67,12 @@
     <p>Track your orders.</p>
     <ion-row>
       <ion-col i-act>
-        <ion-ripple-effect></ion-ripple-effect><ion-button (click)="startOrder()" [disabled] ="setOrdered" expand="full">START ORDER</ion-button></ion-col>
-      <ion-col><ion-button (click)="addProduct()" [disabled] ="setAdded" expand="full">ADD PRODUCT</ion-button></ion-col>
+        <ion-ripple-effect></ion-ripple-effect><ion-button (click)="startOrder()" [disabled] ="isOrdered" expand="full">START ORDER</ion-button></ion-col>
+      <ion-col><ion-button (click)="addProduct()" [disabled] ="isAdded" expand="full">ADD PRODUCT</ion-button></ion-col>
     </ion-row>
     <ion-row>
-      <ion-col><ion-button (click)="trackOrder()"  [disabled] ="setTracked" expand="full">TRACK ORDER</ion-button></ion-col>
-      <ion-col><ion-button (click)="cancelOrder()" [disabled] ="setCanceled"expand="full">CANCEL ORDER</ion-button></ion-col>
+      <ion-col><ion-button (click)="trackOrder()"  [disabled] ="isTracked" expand="full">TRACK ORDER</ion-button></ion-col>
+      <ion-col><ion-button (click)="cancelOrder()" [disabled] ="isCanceled"expand="full">CANCEL ORDER</ion-button></ion-col>
     </ion-row>
 
     <h2>IDFA and iOS</h2>
