@@ -1,0 +1,49 @@
+ion-grid {
+  margin-bottom: 100px;
+}
+
+ion-button{
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.square-green {
+    height: 30%;
+    background-color: #00a263; 
+  }
+.square-green img{
+    opacity: 0.5;
+    max-width: 75%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    translate: pos;
+  }
+.square-green h2{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+
+  }
+.status{
+  color: #505050;
+  font-size: 14px;
+  text-align: end;
+  margin-bottom: 8px;
+  }
+
+.technology{
+  max-height: max-content;
+  margin: 0px 0;
+  }
+.technology ion-label{
+  padding: 20px 0;
+  text-wrap: balance;
+  }
