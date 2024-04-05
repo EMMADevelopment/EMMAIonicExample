@@ -3,30 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DC3427E94747A9B4720700 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0F3A66AC46427E8F7FA096 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		0207DA581B56EA530066E2B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Assets.xcassets */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		2739F8F4C9CC4B2BBB6B79A7 /* EMMAPlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = 5E73992BBE44427B808EDC75 /* EMMAPlugin.h */; };
-		2B52A837063E40598BCB5BBF /* EMMA_iOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 885813DD0F15422DBAD2697D /* EMMA_iOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		3D2A2AC7934A4718BD56FA21 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 548A470886124A819108402B /* CDVWKWebViewUIDelegate.m */; };
-		3D816D0AA469489CAB02FD8D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44EE488FA65E49018259F102 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		3DAC5982F3B74E77A3F30A33 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536A7FFB3BFE498383912188 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4DF15F61AAFB4E428D826AA0 /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 888518EED5EA432E9221F408 /* CDVWKProcessPoolFactory.m */; };
-		4E8451D8AF124EA485F8A82C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1884273DCF4D5B8D3AFD8E /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		67A2A2A8CA574CEFAE83FC49 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D5A49BB3DE47A887BD87B3 /* CDVWKWebViewEngine.m */; };
+		4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
+		57FD46527E844089944DBB27 /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A869D51658144F0A8DB9835 /* AdServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		5E06647830B3478A8E64C839 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 34453EBD4378485EA2B9FF6B /* CDVWKWebViewEngine.m */; };
+		6203492665004E9A93BFBFBA /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEB25D47C45CD8E81A93A /* CDVWKProcessPoolFactory.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		9F5B6A6807EF4670ADDF5B68 /* AppDelegate+EMMAPlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = BE08DD2DE6C340B9815905E7 /* AppDelegate+EMMAPlugin.h */; };
-		D5CFD605060842F6B9B8AFED /* AppDelegate+EMMAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D81EDE9CCC9245858AEFDD8C /* AppDelegate+EMMAPlugin.m */; };
-		E7E9452055A646099FD4D3F7 /* EMMAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A8872C2635A94E1DAE31C816 /* EMMAPlugin.m */; };
-		FDCF7FC3393B451F9CD5538F /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3583294B9A47C3BA7A7752 /* IONAssetHandler.m */; };
+		71F9E21A8B2F4D3AB42B8BA7 /* EMMAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C580DE740940F1A7920C6E /* EMMAPlugin.m */; };
+		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
+		94691CD9A99B4F8B8541D615 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A587739437DC4AE4B64A194E /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		980BF2928E5404649F09AC52 /* libPods-EMMAIonicExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A74A7061CB07679A9713D6C /* libPods-EMMAIonicExample.a */; };
+		9C5F1E6B396B46369E5142B8 /* AppDelegate+EMMAPlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = 02DF7AF9A0FC46CB934A38A3 /* AppDelegate+EMMAPlugin.h */; };
+		A52D3678A3E640CB8B81D8B3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E015B1C01A4F29B5CA7B92 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BDE8A526E8DD4ADE996A048C /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F8F576C00D4E7C97734D78 /* CDVWKWebViewUIDelegate.m */; };
+		C385494D7FE14864A7869C90 /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BA76211917452B87822ED2 /* IONAssetHandler.m */; };
+		C4C916D3BB1C4EC89C1342DE /* EMMAPlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = 8883144180C6480DA1380908 /* EMMAPlugin.h */; };
+		CDCB38E885784BF0BD545689 /* EMMA_iOS.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F82DCD03AFDB4016B2264B20 /* EMMA_iOS.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CE1C36B0BEDC41148E9D6920 /* AppDelegate+EMMAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 998D5395B4BE45EBA44529BE /* AppDelegate+EMMAPlugin.m */; };
+		E64320E7DAE14C04A4B13580 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40FE5F897EF4B2983ABA095 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +58,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EC18E52EE2654601878AA581 /* Embed Frameworks */ = {
+		857339E32710CC9700A1C74C /* Copy Staging Resources */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */,
+				4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */,
+			);
+			name = "Copy Staging Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A60AB9A5F85E448DA864F04F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B52A837063E40598BCB5BBF /* EMMA_iOS.xcframework in Embed Frameworks */,
+				CDCB38E885784BF0BD545689 /* EMMA_iOS.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,11 +84,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EMMAIonicExample/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		0207DA571B56EA530066E2B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02DF7AF9A0FC46CB934A38A3 /* AppDelegate+EMMAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+EMMAPlugin.h"; path = "cordova-plugin-emma-sdk/AppDelegate+EMMAPlugin.h"; sourceTree = "<group>"; };
+		0A74A7061CB07679A9713D6C /* libPods-EMMAIonicExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EMMAIonicExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* EMMAIonicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMMAIonicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A869D51658144F0A8DB9835 /* AdServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -82,28 +101,29 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* EMMAIonicExample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMAIonicExample-Prefix.pch"; sourceTree = "<group>"; };
-		44EE488FA65E49018259F102 /* AdSupport.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		536A7FFB3BFE498383912188 /* WebKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		548A470886124A819108402B /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewUIDelegate.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; };
-		59171130CB2A45B4B24C156B /* IONAssetHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IONAssetHandler.h; path = "cordova-plugin-ionic-webview/IONAssetHandler.h"; sourceTree = "<group>"; };
-		5E73992BBE44427B808EDC75 /* EMMAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EMMAPlugin.h; path = "cordova-plugin-emma-sdk/EMMAPlugin.h"; sourceTree = "<group>"; };
-		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = EMMAIonicExample/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		870130D038BF49B19D08FE27 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
-		885813DD0F15422DBAD2697D /* EMMA_iOS.xcframework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EMMA_iOS.xcframework; path = "EMMAIonicExample/Plugins/cordova-plugin-emma-sdk/EMMA_iOS.xcframework"; sourceTree = "<group>"; };
-		888518EED5EA432E9221F408 /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKProcessPoolFactory.m; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.m"; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* EMMAIonicExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "EMMAIonicExample-Info.plist"; path = "EMMAIonicExample/EMMAIonicExample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		A8872C2635A94E1DAE31C816 /* EMMAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EMMAPlugin.m; path = "cordova-plugin-emma-sdk/EMMAPlugin.m"; sourceTree = "<group>"; };
-		B6D5A49BB3DE47A887BD87B3 /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
-		B77089031470416CA480BE73 /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKProcessPoolFactory.h; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.h"; sourceTree = "<group>"; };
-		BE08DD2DE6C340B9815905E7 /* AppDelegate+EMMAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+EMMAPlugin.h"; path = "cordova-plugin-emma-sdk/AppDelegate+EMMAPlugin.h"; sourceTree = "<group>"; };
-		BE1884273DCF4D5B8D3AFD8E /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		CA0F3A66AC46427E8F7FA096 /* AdServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
-		CF3583294B9A47C3BA7A7752 /* IONAssetHandler.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IONAssetHandler.m; path = "cordova-plugin-ionic-webview/IONAssetHandler.m"; sourceTree = "<group>"; };
-		D6D4F1B3C52F4363AD1E54F5 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewUIDelegate.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; };
-		D81EDE9CCC9245858AEFDD8C /* AppDelegate+EMMAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+EMMAPlugin.m"; path = "cordova-plugin-emma-sdk/AppDelegate+EMMAPlugin.m"; sourceTree = "<group>"; };
+		34453EBD4378485EA2B9FF6B /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
+		36E015B1C01A4F29B5CA7B92 /* AdSupport.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		65BA76211917452B87822ED2 /* IONAssetHandler.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IONAssetHandler.m; path = "cordova-plugin-ionic-webview/IONAssetHandler.m"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CDVLaunchScreen.storyboard; sourceTree = "<group>"; };
+		7204CEF295C14C78B5708385 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewUIDelegate.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; };
+		8120A222EF4748AAAD8D3881 /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKProcessPoolFactory.h; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.h"; sourceTree = "<group>"; };
+		84AEEB25D47C45CD8E81A93A /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKProcessPoolFactory.m; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.m"; sourceTree = "<group>"; };
+		86C580DE740940F1A7920C6E /* EMMAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EMMAPlugin.m; path = "cordova-plugin-emma-sdk/EMMAPlugin.m"; sourceTree = "<group>"; };
+		8883144180C6480DA1380908 /* EMMAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EMMAPlugin.h; path = "cordova-plugin-emma-sdk/EMMAPlugin.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* EMMAIonicExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EMMAIonicExample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		998D5395B4BE45EBA44529BE /* AppDelegate+EMMAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+EMMAPlugin.m"; path = "cordova-plugin-emma-sdk/AppDelegate+EMMAPlugin.m"; sourceTree = "<group>"; };
+		A587739437DC4AE4B64A194E /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AD2907DDFB0A49A8A364B27D /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
+		B40FE5F897EF4B2983ABA095 /* WebKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B4F8F576C00D4E7C97734D78 /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewUIDelegate.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; };
+		C047C128B6E0CC792CCB2CED /* Pods-EMMAIonicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMMAIonicExample.debug.xcconfig"; path = "Target Support Files/Pods-EMMAIonicExample/Pods-EMMAIonicExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D9731D7229CF4DBF8F52A7CF /* IONAssetHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IONAssetHandler.h; path = "cordova-plugin-ionic-webview/IONAssetHandler.h"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EF403891EAFF27E8668348AC /* Pods-EMMAIonicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMMAIonicExample.release.xcconfig"; path = "Target Support Files/Pods-EMMAIonicExample/Pods-EMMAIonicExample.release.xcconfig"; sourceTree = "<group>"; };
+		F82DCD03AFDB4016B2264B20 /* EMMA_iOS.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:V9SQWVREY8:EMMA MOBILE SOLUTIONS SL."; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EMMA_iOS.xcframework; path = "EMMAIonicExample/Plugins/cordova-plugin-emma-sdk/EMMA_iOS.xcframework"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = EMMAIonicExample/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,29 +133,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				3DAC5982F3B74E77A3F30A33 /* WebKit.framework in Frameworks */,
-				3D816D0AA469489CAB02FD8D /* AdSupport.framework in Frameworks */,
-				00DC3427E94747A9B4720700 /* AdServices.framework in Frameworks */,
-				4E8451D8AF124EA485F8A82C /* StoreKit.framework in Frameworks */,
+				A52D3678A3E640CB8B81D8B3 /* AdSupport.framework in Frameworks */,
+				57FD46527E844089944DBB27 /* AdServices.framework in Frameworks */,
+				94691CD9A99B4F8B8541D615 /* StoreKit.framework in Frameworks */,
+				E64320E7DAE14C04A4B13580 /* WebKit.framework in Frameworks */,
+				980BF2928E5404649F09AC52 /* libPods-EMMAIonicExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				302D95EE14D2391D003F00A1 /* MainViewController.h */,
-				302D95EF14D2391D003F00A1 /* MainViewController.m */,
-				302D95F014D2391D003F00A1 /* MainViewController.xib */,
-				1D3623240D0F684500981E51 /* AppDelegate.h */,
-				1D3623250D0F684500981E51 /* AppDelegate.m */,
-			);
-			name = Classes;
-			path = EMMAIonicExample/Classes;
-			sourceTree = SOURCE_ROOT;
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,37 +156,42 @@
 			isa = PBXGroup;
 			children = (
 				EB87FDF41871DAF40020F90C /* config.xml */,
+				3047A50E1AB8057F00498E2A /* config */,
 				EB87FDF31871DA8E0020F90C /* www */,
 				EB87FDF11871DA420020F90C /* Staging */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
-				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* EMMAIonicExample */,
 				307C750510C5A3420062BCA9 /* Plugins */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				A1174C38FD85942B3D48B7EF /* Pods */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
 		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+		29B97315FDCFA39411CA2CEA /* EMMAIonicExample */ = {
 			isa = PBXGroup;
 			children = (
+				90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */,
+				8D1107310486CEB800E47090 /* EMMAIonicExample-Info.plist */,
 				32CA4F630368D1EE00C91783 /* EMMAIonicExample-Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				0207DA571B56EA530066E2B4 /* Assets.xcassets */,
 				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
-			name = "Other Sources";
 			path = EMMAIonicExample;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0207DA571B56EA530066E2B4 /* Images.xcassets */,
-				3047A50E1AB8057F00498E2A /* config */,
-				8D1107310486CEB800E47090 /* EMMAIonicExample-Info.plist */,
-				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
 			);
 			name = Resources;
 			path = EMMAIonicExample/Resources;
@@ -187,11 +200,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				536A7FFB3BFE498383912188 /* WebKit.framework */,
-				44EE488FA65E49018259F102 /* AdSupport.framework */,
-				CA0F3A66AC46427E8F7FA096 /* AdServices.framework */,
-				BE1884273DCF4D5B8D3AFD8E /* StoreKit.framework */,
-				885813DD0F15422DBAD2697D /* EMMA_iOS.xcframework */,
+				36E015B1C01A4F29B5CA7B92 /* AdSupport.framework */,
+				2A869D51658144F0A8DB9835 /* AdServices.framework */,
+				A587739437DC4AE4B64A194E /* StoreKit.framework */,
+				F82DCD03AFDB4016B2264B20 /* EMMA_iOS.xcframework */,
+				B40FE5F897EF4B2983ABA095 /* WebKit.framework */,
+				0A74A7061CB07679A9713D6C /* libPods-EMMAIonicExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,22 +232,31 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				B6D5A49BB3DE47A887BD87B3 /* CDVWKWebViewEngine.m */,
-				548A470886124A819108402B /* CDVWKWebViewUIDelegate.m */,
-				888518EED5EA432E9221F408 /* CDVWKProcessPoolFactory.m */,
-				CF3583294B9A47C3BA7A7752 /* IONAssetHandler.m */,
-				870130D038BF49B19D08FE27 /* CDVWKWebViewEngine.h */,
-				D6D4F1B3C52F4363AD1E54F5 /* CDVWKWebViewUIDelegate.h */,
-				B77089031470416CA480BE73 /* CDVWKProcessPoolFactory.h */,
-				59171130CB2A45B4B24C156B /* IONAssetHandler.h */,
-				5E73992BBE44427B808EDC75 /* EMMAPlugin.h */,
-				A8872C2635A94E1DAE31C816 /* EMMAPlugin.m */,
-				BE08DD2DE6C340B9815905E7 /* AppDelegate+EMMAPlugin.h */,
-				D81EDE9CCC9245858AEFDD8C /* AppDelegate+EMMAPlugin.m */,
+				8883144180C6480DA1380908 /* EMMAPlugin.h */,
+				86C580DE740940F1A7920C6E /* EMMAPlugin.m */,
+				02DF7AF9A0FC46CB934A38A3 /* AppDelegate+EMMAPlugin.h */,
+				998D5395B4BE45EBA44529BE /* AppDelegate+EMMAPlugin.m */,
+				34453EBD4378485EA2B9FF6B /* CDVWKWebViewEngine.m */,
+				B4F8F576C00D4E7C97734D78 /* CDVWKWebViewUIDelegate.m */,
+				84AEEB25D47C45CD8E81A93A /* CDVWKProcessPoolFactory.m */,
+				65BA76211917452B87822ED2 /* IONAssetHandler.m */,
+				AD2907DDFB0A49A8A364B27D /* CDVWKWebViewEngine.h */,
+				7204CEF295C14C78B5708385 /* CDVWKWebViewUIDelegate.h */,
+				8120A222EF4748AAAD8D3881 /* CDVWKProcessPoolFactory.h */,
+				D9731D7229CF4DBF8F52A7CF /* IONAssetHandler.h */,
 			);
 			name = Plugins;
 			path = EMMAIonicExample/Plugins;
 			sourceTree = SOURCE_ROOT;
+		};
+		A1174C38FD85942B3D48B7EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C047C128B6E0CC792CCB2CED /* Pods-EMMAIonicExample.debug.xcconfig */,
+				EF403891EAFF27E8668348AC /* Pods-EMMAIonicExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
@@ -251,11 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "EMMAIonicExample" */;
 			buildPhases = (
-				304B58A110DAC018002A0835 /* Copy www directory */,
+				083122C1A230BB2228D0FCF9 /* [CP] Check Pods Manifest.lock */,
+				857339E32710CC9700A1C74C /* Copy Staging Resources */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				EC18E52EE2654601878AA581 /* Embed Frameworks */,
+				A60AB9A5F85E448DA864F04F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -289,6 +313,7 @@
 				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -326,7 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
-				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				0207DA581B56EA530066E2B4 /* Assets.xcassets in Resources */,
+				90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,19 +360,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		304B58A110DAC018002A0835 /* Copy www directory */ = {
+		083122C1A230BB2228D0FCF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy www directory";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EMMAIonicExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$SRCROOT/EMMAIonicExample/Scripts/copy-www-build-step.sh\"";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -359,14 +392,14 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				67A2A2A8CA574CEFAE83FC49 /* CDVWKWebViewEngine.m in Sources */,
-				3D2A2AC7934A4718BD56FA21 /* CDVWKWebViewUIDelegate.m in Sources */,
-				4DF15F61AAFB4E428D826AA0 /* CDVWKProcessPoolFactory.m in Sources */,
-				FDCF7FC3393B451F9CD5538F /* IONAssetHandler.m in Sources */,
-				2739F8F4C9CC4B2BBB6B79A7 /* EMMAPlugin.h in Sources */,
-				E7E9452055A646099FD4D3F7 /* EMMAPlugin.m in Sources */,
-				9F5B6A6807EF4670ADDF5B68 /* AppDelegate+EMMAPlugin.h in Sources */,
-				D5CFD605060842F6B9B8AFED /* AppDelegate+EMMAPlugin.m in Sources */,
+				C4C916D3BB1C4EC89C1342DE /* EMMAPlugin.h in Sources */,
+				71F9E21A8B2F4D3AB42B8BA7 /* EMMAPlugin.m in Sources */,
+				9C5F1E6B396B46369E5142B8 /* AppDelegate+EMMAPlugin.h in Sources */,
+				CE1C36B0BEDC41148E9D6920 /* AppDelegate+EMMAPlugin.m in Sources */,
+				5E06647830B3478A8E64C839 /* CDVWKWebViewEngine.m in Sources */,
+				BDE8A526E8DD4ADE996A048C /* CDVWKWebViewUIDelegate.m in Sources */,
+				6203492665004E9A93BFBFBA /* CDVWKProcessPoolFactory.m in Sources */,
+				C385494D7FE14864A7869C90 /* IONAssetHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,22 +423,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = V9SQWVREY8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
 					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -419,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.emma.cordova.exampleionic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = NO;
 			};
@@ -433,22 +453,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = V9SQWVREY8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
-					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
 					"\"EMMAIonicExample/Plugins/cordova-plugin-emma-sdk\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -460,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.emma.cordova.exampleionic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = NO;
 			};
@@ -469,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -484,6 +492,7 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -491,6 +500,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -502,6 +512,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MERGED_BINARY_TYPE = automatic;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
@@ -513,6 +524,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -528,12 +540,14 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_THUMB_SUPPORT = NO;
@@ -545,6 +559,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MERGED_BINARY_TYPE = automatic;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 1;

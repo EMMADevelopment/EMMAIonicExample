@@ -16,7 +16,7 @@
 
     <ion-row class="ion-align-items-end">
     <h2>Deeplink</h2>
-    <ion-col class="status">No deeplink</ion-col>
+    <ion-col class="status">{{ deeplink ?? 'No deeplink'}}</ion-col>
     </ion-row>
 
     <ion-row>
@@ -59,9 +59,11 @@
       <ion-col><ion-button (click)="handleInAppMessage('strip')" expand="full">SHOW STRIP</ion-button></ion-col>
       <ion-col><ion-button (click)="handleInAppMessage('nativeAd')" expand="full">SHOW NATIVE AD</ion-button></ion-col>
     </ion-row>
-    <ion-row>
-    <ion-col><ion-button *ngIf="isAndroid" (click)="handleInAppMessage('banner')" expand="full">SHOW BANNER</ion-button></ion-col>
-    </ion-row>
+    <div *ngIf="isAndroid">
+      <ion-row>
+        <ion-col><ion-button (click)="handleInAppMessage('banner')" expand="full">SHOW BANNER</ion-button></ion-col>
+      </ion-row>
+    </div>
 
     <h2>Orders and Products</h2>
     <p>Track your orders.</p>
@@ -75,9 +77,11 @@
       <ion-col><ion-button (click)="cancelOrder()" [disabled] ="isCanceled"expand="full">CANCEL ORDER</ion-button></ion-col>
     </ion-row>
 
-    <h2>IDFA and iOS</h2>
-    <p>Request tracking with IDFA for iOS devices.</p>
-    <ion-button (click)="requestIDFA()" expand="full" >REQUEST IDFA TRACKING</ion-button>
+    <div *ngIf="isIos">
+      <h2>IDFA</h2>
+      <p>Request tracking with IDFA for iOS devices.</p>
+      <ion-button (click)="requestIDFA()" expand="full" >REQUEST IDFA TRACKING</ion-button>
+    </div>
 
 
     <h2>Learn More</h2>

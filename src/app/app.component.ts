@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 
-import { Platform, AlertController } from '@ionic/angular';
-import { log } from 'console';
-import { AnyARecord } from 'dns';
-import { IN_APP_TYPE,
-  LoginRegisterUserParams, 
-  EventParams, 
-  OrderParams, 
+import { AlertController, Platform } from '@ionic/angular';
+import {
+  EventParams,
+  IN_APP_TYPE,
+  LoginRegisterUserParams,
+  OrderParams,
   ProductParams
-         } from './types';
+} from './types';
 
 //import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 //import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -37,18 +36,17 @@ export class AppComponent {
 
   //Parameters
   userParams : LoginRegisterUserParams ={
-    userId:"Prueba",
-    email:"email.prueba@arkana.io"
+    userId:"Test",
+    email:"email.test@emmail.com"
   };
   eventToken : EventParams ={
-    eventRequest: "7b358954cf16bc2b7830bb5307f80f96",
-    eventAttributes: {IONIC: "working"}
+    token: "7b358954cf16bc2b7830bb5307f80f96",
+    attributes: {IONIC: "working"}
   }
   order : OrderParams ={
     orderId:"EMMA",
     totalPrice: 24.12,
     customerId:"EMMA",
-    currencyCode: "USD",
     coupon: "",
     extras: {IONIC: "Working"}
   };
@@ -59,6 +57,8 @@ export class AppComponent {
       price:12.23,
       extras:{IONIC :"working"},
   }
+
+  deeplink: string | undefined;
 
   constructor(
     private platform: Platform,
@@ -73,15 +73,13 @@ export class AppComponent {
       this.isAndroid = this.platform.is("android");
       this.isIos = this.platform.is("ios");
       this.initEMMA();
-      //this.statusBar.styleDefault();
-     //this.splashScreen.hide();
     });
   }
 
   initEMMA() {
     document.addEventListener('onDeepLink', (event: any) => {
-      const url = event.url;
-      this.EMMA.handleLink(url);
+      this.deeplink = event.url;
+      this.EMMA.handleLink(this.deeplink);
       this.presentAlert('DeepLink', JSON.stringify(event));
     });
 
@@ -165,7 +163,7 @@ export class AppComponent {
         console.log("Show Native Ad");
         break;
 
-        case "showBanner":
+        case "banner":
           this.EMMA.inAppMessage({type:IN_APP_TYPE.BANNER});
           console.log("Show Native Ad");
           break;

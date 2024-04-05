@@ -18,15 +18,14 @@ export interface LoginRegisterUserParams {
 }
 
 export interface EventParams {
-    eventRequest: string;
-    eventAttributes?: Record<string, string | number>;
+    token: string;
+    attributes?: Record<string, string | number>;
 }
 
 export interface OrderParams {
     orderId: string;
     totalPrice: number;
     customerId: string;
-    currencyCode: string;
     coupon?: string;
     extras?: Record<string, string>; 
 }

@@ -9,6 +9,10 @@
         "parents": {
           "/*": [
             {
+              "xml": "<feature name=\"EMMAPlugin\"><param name=\"ios-package\" value=\"EMMAPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
               "xml": "<allow-navigation href=\"ionic://*\" />",
               "count": 1
             },
@@ -23,10 +27,6 @@
             {
               "xml": "<preference name=\"CordovaWebViewEngine\" value=\"CDVWKWebViewEngine\" />",
               "count": 1
-            },
-            {
-              "xml": "<feature name=\"EMMAPlugin\"><param name=\"ios-package\" value=\"EMMAPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
             }
           ]
         }
@@ -34,15 +34,23 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-ionic-webview": {
+    "cordova-plugin-emma-sdk": {
       "PACKAGE_NAME": "io.emma.cordova.exampleionic"
     },
-    "cordova-plugin-emma-sdk": {
+    "cordova-plugin-ionic-webview": {
       "PACKAGE_NAME": "io.emma.cordova.exampleionic"
     }
   },
   "dependent_plugins": {},
   "modules": [
+    {
+      "id": "cordova-plugin-emma-sdk.emma",
+      "file": "plugins/cordova-plugin-emma-sdk/www/emma.js",
+      "pluginId": "cordova-plugin-emma-sdk",
+      "clobbers": [
+        "window.plugins.EMMA"
+      ]
+    },
     {
       "id": "cordova-plugin-ionic-webview.IonicWebView",
       "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
@@ -58,18 +66,10 @@
       "clobbers": [
         "cordova.exec"
       ]
-    },
-    {
-      "id": "cordova-plugin-emma-sdk.emma",
-      "file": "plugins/cordova-plugin-emma-sdk/www/emma.js",
-      "pluginId": "cordova-plugin-emma-sdk",
-      "clobbers": [
-        "window.plugins.EMMA"
-      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-ionic-webview": "5.0.0",
-    "cordova-plugin-emma-sdk": "1.6.1"
+    "cordova-plugin-emma-sdk": "1.7.1",
+    "cordova-plugin-ionic-webview": "5.0.0"
   }
 }
