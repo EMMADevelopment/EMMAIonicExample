@@ -22,6 +22,7 @@
 		71F9E21A8B2F4D3AB42B8BA7 /* EMMAPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C580DE740940F1A7920C6E /* EMMAPlugin.m */; };
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		94691CD9A99B4F8B8541D615 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A587739437DC4AE4B64A194E /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		95A267C02BC09D4C0047D2EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267BE2BC09D4C0047D2EB /* AppTrackingTransparency.framework */; };
 		980BF2928E5404649F09AC52 /* libPods-EMMAIonicExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A74A7061CB07679A9713D6C /* libPods-EMMAIonicExample.a */; };
 		9C5F1E6B396B46369E5142B8 /* AppDelegate+EMMAPlugin.h in Sources */ = {isa = PBXBuildFile; fileRef = 02DF7AF9A0FC46CB934A38A3 /* AppDelegate+EMMAPlugin.h */; };
 		A52D3678A3E640CB8B81D8B3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E015B1C01A4F29B5CA7B92 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -112,6 +113,7 @@
 		8883144180C6480DA1380908 /* EMMAPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EMMAPlugin.h; path = "cordova-plugin-emma-sdk/EMMAPlugin.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* EMMAIonicExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EMMAIonicExample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		95A267BE2BC09D4C0047D2EB /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = DEVELOPER_DIR; };
 		998D5395B4BE45EBA44529BE /* AppDelegate+EMMAPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+EMMAPlugin.m"; path = "cordova-plugin-emma-sdk/AppDelegate+EMMAPlugin.m"; sourceTree = "<group>"; };
 		A587739437DC4AE4B64A194E /* StoreKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AD2907DDFB0A49A8A364B27D /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				57FD46527E844089944DBB27 /* AdServices.framework in Frameworks */,
 				94691CD9A99B4F8B8541D615 /* StoreKit.framework in Frameworks */,
 				E64320E7DAE14C04A4B13580 /* WebKit.framework in Frameworks */,
+				95A267C02BC09D4C0047D2EB /* AppTrackingTransparency.framework in Frameworks */,
 				980BF2928E5404649F09AC52 /* libPods-EMMAIonicExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,6 +203,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95A267BE2BC09D4C0047D2EB /* AppTrackingTransparency.framework */,
 				36E015B1C01A4F29B5CA7B92 /* AdSupport.framework */,
 				2A869D51658144F0A8DB9835 /* AdServices.framework */,
 				A587739437DC4AE4B64A194E /* StoreKit.framework */,
