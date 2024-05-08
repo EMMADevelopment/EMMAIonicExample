@@ -79,7 +79,6 @@ export class AppComponent {
   initEMMA() {
     document.addEventListener('onDeepLink', (event: any) => {
       this.deeplink = event.url;
-      this.EMMA.handleLink(this.deeplink);
       this.presentAlert('DeepLink', JSON.stringify(event));
     });
 

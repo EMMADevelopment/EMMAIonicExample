@@ -19,6 +19,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
     <platform name="android">
         <preference name="android-minSdkVersion" value="21" />
         <preference name="android-targetSdkVersion" value="33" />
@@ -46,20 +47,21 @@
                     <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 </intent-filter>
             </service>
-        </config-file>
-        <config-file parent="./application/activity" target="AndroidManifest.xml" xmlns:android="http://schemas.android.com/apk/res/android">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="emmaionic" />
-            </intent-filter>
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:host="emmaionic.powlink.io" android:scheme="https" />
-            </intent-filter>
+            <activity android:exported="true" android:name="io.emma.android.activities.EMMADeepLinkActivity" android:noHistory="true" android:theme="@android:style/Theme.NoDisplay">
+                <intent-filter autoVerify="true">
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:host="emmaionic.powlink.io" android:scheme="https" />
+                </intent-filter>
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="emmaionic" />
+                </intent-filter>
+            </activity>
+            <meta-data android:name="io.emma.DEEPLINK_OPEN_ACTIVITY" android:value="io.emma.cordova.exampleionic.MainActivity" />
         </config-file>
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />

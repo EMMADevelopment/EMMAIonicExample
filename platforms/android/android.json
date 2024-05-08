@@ -17,6 +17,7 @@
                 "android:hardwareAccelerated": "true",
                 "android:icon": "@mipmap/ic_launcher",
                 "android:label": "@string/app_name",
+                "android:networkSecurityConfig": "@xml/network_security_config",
                 "android:supportsRtl": "true"
               }
             }
@@ -28,11 +29,11 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-              "count": 2
+              "count": 6
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
-              "count": 2
+              "count": 6
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -54,7 +55,15 @@
           "/manifest/application": [
             {
               "xml": "<service android:enabled=\"true\" android:exported=\"false\" android:name=\"io.emma.android.push.EMMAFcmMessagingService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
-              "count": 2
+              "count": 6
+            },
+            {
+              "xml": "<activity android:exported=\"true\" android:name=\"io.emma.android.activities.EMMADeepLinkActivity\" android:noHistory=\"true\" android:theme=\"@android:style/Theme.NoDisplay\"><intent-filter autoVerify=\"true\"><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"emmaionic.powlink.io\" android:scheme=\"https\" /></intent-filter><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"emmaionic\" /></intent-filter></activity>",
+              "count": 6
+            },
+            {
+              "xml": "<meta-data android:name=\"io.emma.DEEPLINK_OPEN_ACTIVITY\" android:value=\"io.emma.cordova.exampleionic.MainActivity\" />",
+              "count": 6
             },
             {
               "xml": "<activity android:exported=\"false\" android:hardwareAccelerated=\"true\" android:name=\"io.emma.android.activities.EMMAWebViewActivity\" android:theme=\"@android:style/Theme.Holo.Light.NoActionBar\" />",
@@ -67,16 +76,6 @@
             {
               "xml": "<activity android:exported=\"false\" android:launchMode=\"singleTask\" android:name=\"io.emma.android.activities.PermissionsActivity\" android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" />",
               "count": 1
-            }
-          ],
-          "./application/activity": [
-            {
-              "xml": "<intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"emmaionic\" /></intent-filter>",
-              "count": 2
-            },
-            {
-              "xml": "<intent-filter android:autoVerify=\"true\"><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"emmaionic.powlink.io\" android:scheme=\"https\" /></intent-filter>",
-              "count": 2
             }
           ]
         }
