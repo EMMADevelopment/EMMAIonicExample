@@ -145,31 +145,26 @@ export class AppComponent {
         this.EMMA.inAppMessage({type:IN_APP_TYPE.ADBALL});
         console.log("Show Adball");
         break;
-
-        case "starview":
+      case "starview":
         this.EMMA.inAppMessage({type:IN_APP_TYPE.STARTVIEW});
         console.log("Show Starview");
         break;
-
-        case "strip":
+      case "strip":
         this.EMMA.inAppMessage({type:IN_APP_TYPE.STRIP});
         console.log("Show Strip");
         break;
-
-        case "nativeAd":
+      case "nativeAd":
         const templateId : string = "batch-template2";
         this.EMMA.inAppMessage({type:IN_APP_TYPE.NATIVE_AD, templateId});
         console.log("Show Native Ad");
         break;
-
-        case "banner":
-          this.EMMA.inAppMessage({type:IN_APP_TYPE.BANNER});
-          console.log("Show Native Ad");
-          break;
-
+      case "banner":
+        this.EMMA.inAppMessage({type:IN_APP_TYPE.BANNER});
+        console.log("Show Native Ad");
+        break;
     }
-
   }
+
   startOrder(){
     console.log("Start Order");
     this.EMMA.startOrder(this.order);

@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     implementation 'com.google.firebase:firebase-messaging:20.3.0'
-    implementation 'io.emma:eMMaSDK:4.13.+'
+    implementation 'io.emma:eMMaSDK:4.14.+'
 }
 
 ext.postBuildExtras = {

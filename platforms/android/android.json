@@ -29,11 +29,11 @@
           "/manifest": [
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
-              "count": 6
+              "count": 13
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
-              "count": 6
+              "count": 13
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
@@ -55,15 +55,15 @@
           "/manifest/application": [
             {
               "xml": "<service android:enabled=\"true\" android:exported=\"false\" android:name=\"io.emma.android.push.EMMAFcmMessagingService\"><intent-filter><action android:name=\"com.google.firebase.MESSAGING_EVENT\" /></intent-filter></service>",
-              "count": 6
+              "count": 13
             },
             {
               "xml": "<activity android:exported=\"true\" android:name=\"io.emma.android.activities.EMMADeepLinkActivity\" android:noHistory=\"true\" android:theme=\"@android:style/Theme.NoDisplay\"><intent-filter autoVerify=\"true\"><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:host=\"emmaionic.powlink.io\" android:scheme=\"https\" /></intent-filter><intent-filter><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /><data android:scheme=\"emmaionic\" /></intent-filter></activity>",
-              "count": 6
+              "count": 13
             },
             {
               "xml": "<meta-data android:name=\"io.emma.DEEPLINK_OPEN_ACTIVITY\" android:value=\"io.emma.cordova.exampleionic.MainActivity\" />",
-              "count": 6
+              "count": 13
             },
             {
               "xml": "<activity android:exported=\"false\" android:hardwareAccelerated=\"true\" android:name=\"io.emma.android.activities.EMMAWebViewActivity\" android:theme=\"@android:style/Theme.Holo.Light.NoActionBar\" />",
@@ -84,10 +84,6 @@
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"EMMAPlugin\"><param name=\"android-package\" value=\"io.emma.cordova.plugin.EMMAPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<allow-navigation href=\"http://localhost/*\" />",
               "count": 1
             },
@@ -106,6 +102,10 @@
             {
               "xml": "<feature name=\"IonicWebView\"><param name=\"android-package\" value=\"com.ionicframework.cordova.webview.IonicWebView\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"EMMAPlugin\"><param name=\"android-package\" value=\"io.emma.cordova.plugin.EMMAPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -113,23 +113,15 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-emma-sdk": {
+    "cordova-plugin-ionic-webview": {
       "PACKAGE_NAME": "io.emma.cordova.exampleionic"
     },
-    "cordova-plugin-ionic-webview": {
+    "cordova-plugin-emma-sdk": {
       "PACKAGE_NAME": "io.emma.cordova.exampleionic"
     }
   },
   "dependent_plugins": {},
   "modules": [
-    {
-      "id": "cordova-plugin-emma-sdk.emma",
-      "file": "plugins/cordova-plugin-emma-sdk/www/emma.js",
-      "pluginId": "cordova-plugin-emma-sdk",
-      "clobbers": [
-        "window.plugins.EMMA"
-      ]
-    },
     {
       "id": "cordova-plugin-ionic-webview.IonicWebView",
       "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
@@ -137,10 +129,18 @@
       "clobbers": [
         "Ionic.WebView"
       ]
+    },
+    {
+      "id": "cordova-plugin-emma-sdk.emma",
+      "file": "plugins/cordova-plugin-emma-sdk/www/emma.js",
+      "pluginId": "cordova-plugin-emma-sdk",
+      "clobbers": [
+        "window.plugins.EMMA"
+      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-emma-sdk": "1.7.1",
-    "cordova-plugin-ionic-webview": "5.0.0"
+    "cordova-plugin-ionic-webview": "5.0.0",
+    "cordova-plugin-emma-sdk": "1.8.0"
   }
 }

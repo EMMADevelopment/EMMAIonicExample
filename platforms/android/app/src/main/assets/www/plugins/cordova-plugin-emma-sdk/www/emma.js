@@ -250,7 +250,7 @@ exports.sendInAppImpression = function (inAppType, campaignId) {
 };
 
 /**
- * Sends click associated with inapp campaign. This method is mainly used to send native Ad impressions.
+ * Sends click associated with inapp campaign. This method is mainly used to send native Ad click.
  * Formats startview, banner, adball send impression automatically
  *
  * @param inAppType The inapp type
@@ -262,6 +262,21 @@ exports.sendInAppClick = function (inAppType, campaignId) {
     { type: inAppType, campaignId }
   ]);
 };
+
+/**
+ * Sends dismiss click associated with inapp campaign. This method is mainly used to send native Ad dismiss click.
+ * Formats startview, banner, adball send impression automatically
+ *
+ * @param inAppType The inapp type
+ * @param campaignId The campaign identifier
+ */
+exports.sendInAppDismissedClick = function (inAppType, campaignId) {
+  argscheck.checkArgs('SN', 'EMMAPlugin.sendInAppDismissedClick', arguments);
+  exec(null, null, 'EMMAPlugin', 'sendInAppDismissedClick', [
+    { type: inAppType, campaignId }
+  ]);
+};
+
 
 /**
  * Opens native ad CTA inapp or outapp. This method track native ad click automatically. It is not necessary call to sendInAppClick method.
