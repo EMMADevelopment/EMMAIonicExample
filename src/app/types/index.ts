@@ -37,3 +37,20 @@ export interface ProductParams {
     price: number;
     extras: Record<string, string>; 
 }
+
+interface Fields {
+    Subtitle: string;
+    CTA: string;
+    "Main picture": string;
+    Title: string;
+}
+
+export interface EMMANativeAd {
+    id: number;
+    templateId: string;
+    cta: string;
+    times: number;
+    tag: string;
+    showOn: string;
+    fields: Fields;
+}

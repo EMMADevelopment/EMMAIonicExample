@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 
 import { AlertController, Platform } from '@ionic/angular';
 import {
+  EMMANativeAd,
   EventParams,
   IN_APP_TYPE,
   LoginRegisterUserParams,
@@ -20,6 +21,17 @@ declare var window: any;
 })
 export class AppComponent {
   EMMA: any; 
+
+  // Easy navigation management
+  currentScreen: string = 'main'; 
+
+  // Variables for storing NativeAd values
+  nativeAdId: number = 0;
+  nativeAdTitle: string = '';
+  nativeAdSubtitle: string = '';
+  nativeAdImage: string = '';
+  nativeAdCTA: string = '';
+  nativeAdShowOn: string = '';
   
   //Button Controllers
   isRegistered  = false;
@@ -64,6 +76,7 @@ export class AppComponent {
     private platform: Platform,
     //private statusBar: StatusBar,
     private alertCtrl: AlertController,
+    private cdr: ChangeDetectorRef
   ) {
     this.initializeApp();
   }
@@ -90,7 +103,7 @@ export class AppComponent {
     this.EMMA = window.plugins.EMMA;
 
     const configuration= {
-      sessionKey: 'emmaionicoJxuVt2o3',
+      sessionKey: 'emmamobileM6wQcLX8S',
       debug: true
     };
 
@@ -154,15 +167,32 @@ export class AppComponent {
         console.log("Show Strip");
         break;
       case "nativeAd":
-        const templateId : string = "batch-template2";
-        this.EMMA.inAppMessage({type:IN_APP_TYPE.NATIVE_AD, templateId});
-        console.log("Show Native Ad");
+        const templateId : string = "template2";
+        this.EMMA.inAppMessage({
+          type: IN_APP_TYPE.NATIVE_AD,
+          templateId: templateId,
+          inAppResponse: (response: [EMMANativeAd]) => {
+            this.nativeAdId = response[0].id;
+            this.nativeAdTitle = response[0].fields.Title
+            this.nativeAdSubtitle = response[0].fields.Subtitle
+            this.nativeAdImage = response[0].fields['Main picture']
+            this.nativeAdCTA = response[0].fields.CTA;
+            this.nativeAdShowOn = response[0].showOn;
+
+            this.navigateTo('nativeAd');
+          },
+        });
+        console.log("Show NativeAd");
         break;
       case "banner":
         this.EMMA.inAppMessage({type:IN_APP_TYPE.BANNER});
-        console.log("Show Native Ad");
+        console.log("Show Banner");
         break;
     }
+  }
+
+  onNativeAdClick() {
+    this.EMMA.openNativeAd(this.nativeAdId, this.nativeAdCTA, this.nativeAdShowOn);
   }
 
   startOrder(){
@@ -193,5 +223,10 @@ export class AppComponent {
 
   requestIDFA(){
     this.EMMA.requestTrackingWithIdfa();
-  }  
+  } 
+  
+  navigateTo(screen: string) {
+    this.currentScreen = screen;
+    this.cdr.detectChanges()
+  }
 }
