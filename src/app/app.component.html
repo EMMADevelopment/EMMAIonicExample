@@ -85,6 +85,25 @@
         <ion-button (click)="requestIDFA()" expand="full" >REQUEST IDFA TRACKING</ion-button>
       </div>
 
+      <h2>Language</h2>
+      <p>Change the language to receive notifications, communications and more in this language.</p>
+      <ion-item>
+        <ion-label>Choose a language</ion-label>
+        <ion-select
+          interface="popover"
+          [(ngModel)]="selectedLanguage"
+          expand="block"
+        >
+          <ion-select-option value="Spanish">Spanish</ion-select-option>
+          <ion-select-option value="English">English</ion-select-option>
+          <ion-select-option value="French">French</ion-select-option>
+          <ion-select-option value="German">German</ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-button (click)="setUserLanguage()" expand="full">
+        SET LANGUAGE
+      </ion-button>      
 
       <h2>Learn More</h2>
       <p>Read the docs to discover what to do next:</p>

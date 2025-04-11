@@ -72,6 +72,8 @@ export class AppComponent {
 
   deeplink: string | undefined;
 
+  selectedLanguage: string = "Spanish";
+
   constructor(
     private platform: Platform,
     //private statusBar: StatusBar,
@@ -103,7 +105,7 @@ export class AppComponent {
     this.EMMA = window.plugins.EMMA;
 
     const configuration= {
-      sessionKey: 'emmamobileM6wQcLX8S',
+      sessionKey: 'emmacordova2BMRb2NQ0',
       debug: true
     };
 
@@ -167,22 +169,24 @@ export class AppComponent {
         console.log("Show Strip");
         break;
       case "nativeAd":
-        const templateId : string = "template2";
-        this.EMMA.inAppMessage({
-          type: IN_APP_TYPE.NATIVE_AD,
-          templateId: templateId,
-          inAppResponse: (response: [EMMANativeAd]) => {
-            this.nativeAdId = response[0].id;
-            this.nativeAdTitle = response[0].fields.Title
-            this.nativeAdSubtitle = response[0].fields.Subtitle
-            this.nativeAdImage = response[0].fields['Main picture']
-            this.nativeAdCTA = response[0].fields.CTA;
-            this.nativeAdShowOn = response[0].showOn;
-
-            this.navigateTo('nativeAd');
-          },
-        });
-        console.log("Show NativeAd");
+        {
+          const templateId : string = "template2";
+          this.EMMA.inAppMessage({
+            type: IN_APP_TYPE.NATIVE_AD,
+            templateId: templateId,
+            inAppResponse: (response: [EMMANativeAd]) => {
+              this.nativeAdId = response[0].id;
+              this.nativeAdTitle = response[0].fields.Title
+              this.nativeAdSubtitle = response[0].fields.Subtitle
+              this.nativeAdImage = response[0].fields['Main picture']
+              this.nativeAdCTA = response[0].fields.CTA;
+              this.nativeAdShowOn = response[0].showOn;
+  
+              this.navigateTo('nativeAd');
+            },
+          });
+          console.log("Show NativeAd");
+        }
         break;
       case "banner":
         this.EMMA.inAppMessage({type:IN_APP_TYPE.BANNER});
@@ -224,6 +228,18 @@ export class AppComponent {
   requestIDFA(){
     this.EMMA.requestTrackingWithIdfa();
   } 
+
+  setUserLanguage(){
+    const languageMap: { [key: string]: string } = {
+      'Spanish': 'es',
+      'English': 'en',
+      'French': 'fr',
+      'German': 'de',
+    };
+
+    const langCode = languageMap[this.selectedLanguage] ?? 'es';
+    this.EMMA.setUserLanguage(langCode);
+  }
   
   navigateTo(screen: string) {
     this.currentScreen = screen;
