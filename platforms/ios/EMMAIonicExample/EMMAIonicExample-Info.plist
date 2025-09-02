@@ -65,8 +65,6 @@
 			</dict>
 		</dict>
 	</array>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>IDFA is needed to offer personalized contents</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

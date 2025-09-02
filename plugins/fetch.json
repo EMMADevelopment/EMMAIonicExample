@@ -10,7 +10,7 @@
   "cordova-plugin-emma-sdk": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-emma-sdk@1.8.0"
+      "id": "cordova-plugin-emma-sdk"
     },
     "is_top_level": true,
     "variables": {

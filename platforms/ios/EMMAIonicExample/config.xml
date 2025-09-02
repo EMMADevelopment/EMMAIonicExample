@@ -29,6 +29,10 @@
     <feature name="IonicWebView">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
+    <feature name="EMMAPlugin">
+        <param name="ios-package" value="EMMAPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <name>EMMAIonicExample</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
@@ -115,8 +119,4 @@
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="hostname" value="localhost" />
     <preference name="scheme" value="app" />
-    <feature name="EMMAPlugin">
-        <param name="ios-package" value="EMMAPlugin" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>

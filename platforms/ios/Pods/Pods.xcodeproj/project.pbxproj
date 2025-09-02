@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB3EEF0363265AF62D13949CA0692A79 /* Pods-EMMAIonicExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BCA7CB15882FD88780C4D4709C720D /* Pods-EMMAIonicExample-dummy.m */; };
+		AC4C1ED289430EB7F9A374063592EF9B /* Pods-EMMAIonicExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28BCA7CB15882FD88780C4D4709C720D /* Pods-EMMAIonicExample-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		759B689468FF41CB632453F3CF2AB8C9 /* Frameworks */ = {
+		5788471407362F14DCAF43334233F203 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,7 +80,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F7D47C25A42AA95BA290C05743DA4DF9 /* Headers */ = {
+		EEE894729C46507E91D1AFF19CCC1B2D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,11 +92,11 @@
 /* Begin PBXNativeTarget section */
 		440BB0297F849ADEC6AD349F21D7A801 /* Pods-EMMAIonicExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6737CB04397B7F3BA006FE0E5A0C1F80 /* Build configuration list for PBXNativeTarget "Pods-EMMAIonicExample" */;
+			buildConfigurationList = 217835854A7FC3EAF58513532FBBADE1 /* Build configuration list for PBXNativeTarget "Pods-EMMAIonicExample" */;
 			buildPhases = (
-				F7D47C25A42AA95BA290C05743DA4DF9 /* Headers */,
-				F1E65D96595CF8421902EDCAB44C1608 /* Sources */,
-				759B689468FF41CB632453F3CF2AB8C9 /* Frameworks */,
+				EEE894729C46507E91D1AFF19CCC1B2D /* Headers */,
+				B2F419D64AC2F6884BC6BF8EA163F2AB /* Sources */,
+				5788471407362F14DCAF43334233F203 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,11 +113,11 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +125,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = D994C38D0F9C7FA6A6C2F208E64700D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,18 +137,41 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F1E65D96595CF8421902EDCAB44C1608 /* Sources */ = {
+		B2F419D64AC2F6884BC6BF8EA163F2AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB3EEF0363265AF62D13949CA0692A79 /* Pods-EMMAIonicExample-dummy.m in Sources */,
+				AC4C1ED289430EB7F9A374063592EF9B /* Pods-EMMAIonicExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		09DD2D9D8C1E5760BB3AACB6F4D421D3 /* Release */ = {
+		0C2A4A8C12173AA13EE08FE4D97D58A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8B0168ADCE5D4FC11028B83C08481D /* Pods-EMMAIonicExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ED22D28ADBF641C75A99FDE6E7C48D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DAC8D128FF82E3C9A906A2C7414D4F0 /* Pods-EMMAIonicExample.release.xcconfig */;
 			buildSettings = {
@@ -155,6 +180,8 @@
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
@@ -230,27 +257,6 @@
 			};
 			name = Release;
 		};
-		B2B3971E91190D8CE34D9701D50C3AEA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8B0168ADCE5D4FC11028B83C08481D /* Pods-EMMAIonicExample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -320,20 +326,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		217835854A7FC3EAF58513532FBBADE1 /* Build configuration list for PBXNativeTarget "Pods-EMMAIonicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2A4A8C12173AA13EE08FE4D97D58A2 /* Debug */,
+				8ED22D28ADBF641C75A99FDE6E7C48D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
 				903A0004D3E6651EFD5D2E16214D101B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6737CB04397B7F3BA006FE0E5A0C1F80 /* Build configuration list for PBXNativeTarget "Pods-EMMAIonicExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B2B3971E91190D8CE34D9701D50C3AEA /* Debug */,
-				09DD2D9D8C1E5760BB3AACB6F4D421D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
